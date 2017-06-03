@@ -12,7 +12,7 @@ import:
 - package: github.com/mitchellh/go-ps
 - package: github.com/olekukonko/tablewriter
 - package: github.com/osrg/gobgp
-  version: 38c47609a2eeae67c2c9cc042adea60484c2f481
+  version: v1.4
   subpackages:
   - client
   - packet/bgp

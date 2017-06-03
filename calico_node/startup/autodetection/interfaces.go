@@ -59,7 +59,7 @@ func GetInterfaces(includeRegexes []string, excludeRegexes []string, version int
 
 	// Loop through interfaces filtering on the regexes.  Loop in reverse
 	// order to maintain behavior with older versions.
-	for idx := len(netIfaces)-1; idx >= 0; idx-- {
+	for idx := len(netIfaces) - 1; idx >= 0; idx-- {
 		iface := netIfaces[idx]
 		include := (includeRegexp == nil) || includeRegexp.MatchString(iface.Name)
 		exclude := (excludeRegexp != nil) && excludeRegexp.MatchString(iface.Name)
